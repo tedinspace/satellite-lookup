@@ -1,0 +1,31 @@
+export interface Satdex {
+  name: string;
+  number: string;
+  officialName: string;
+  countryRegistry: string;
+  countryOperator: string;
+  operator: string;
+  users: string;
+  purpose: string;
+  purposeDetails: string;
+  orbitClass: string;
+  orbitType: string;
+  longitude: string;
+  perigee: string;
+  apogee: string;
+  eccentricity: string;
+  inclination: string;
+  period: string;
+  massLaunch: string;
+  massDry: string;
+  power: string;
+  launchDate: string;
+  lifetime: string;
+  contractor: string;
+  countryContractor: string;
+  launchSite: string;
+  launchVehicle: string;
+  COSPAR: string;
+  comments: string;
+  links: string[];
+}
