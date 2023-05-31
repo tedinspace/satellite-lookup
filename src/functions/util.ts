@@ -1,7 +1,7 @@
-import { Satdex } from "../components";
+import { SatDex } from "../components";
 import _ from "lodash";
 export const createKeysForCache = (UCS: {
-  [key: string]: Satdex;
+  [key: string]: SatDex;
 }): string[] => {
   return _.keys(UCS).sort();
 };

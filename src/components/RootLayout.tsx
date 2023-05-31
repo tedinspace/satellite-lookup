@@ -1,13 +1,12 @@
-import { Box, TextInput } from "grommet";
+import { Box } from "grommet";
 import React from "react";
 import { TedHead } from "./shared/TedHead";
 import axios from "axios";
-import { Satdex } from ".";
+import { SatDex } from ".";
 import { createKeysForCache } from "../functions/util";
-import { SearchAndSelect } from "./SearchAndSelect";
 
 export interface IState {
-  UCS: { [key: string]: Satdex };
+  UCS: { [key: string]: SatDex };
   keys: string[];
 }
 
@@ -23,7 +22,7 @@ class Rootlayout extends React.Component<IProps, IState> {
 
   componentDidMount(): void {
     axios
-      .get("/UCS_2023.json")
+      .get("/satcat_2023.json")
       .then((d) => {
         this.setState({
           UCS: d.data,
@@ -37,10 +36,9 @@ class Rootlayout extends React.Component<IProps, IState> {
     return (
       <Box fill>
         <TedHead />
+        count: {this.state.keys.length}
         <Box fill>
-          <div style={{ border: "1px solid red" }}>
-            <SearchAndSelect {...this.state} />
-          </div>
+          
         </Box>
       </Box>
     );

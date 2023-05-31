@@ -1,9 +1,9 @@
 import React from "react";
-import { Box, TextInput } from "grommet";
-import { Satdex } from ".";
+import {  TextInput } from "grommet";
+import { SatDex } from ".";
 
 interface IProps {
-  UCS: { [key: string]: Satdex };
+  UCS: { [key: string]: SatDex };
   keys: string[];
 }
 

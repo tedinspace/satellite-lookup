@@ -1,14 +1,19 @@
 import { Header, Box, Text } from "grommet";
 import { Deploy, Github, Home } from "grommet-icons";
-import { DARK3, TED, POP2, DARK2 } from "./colors";
+import {
+  POP2,
+  TED,
+  UPPERBAR1,
+  UPPERBAR0,
+} from "./colors";
 
 export function TedHead() {
   return (
     <Header
       pad="small"
-      background={DARK2}
+      background={UPPERBAR0}
       style={{
-        borderBottom: "2px solid " + DARK3,
+        borderBottom: "2px solid " + UPPERBAR1,
       }}
     >
       <Box direction="row">
